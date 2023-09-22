@@ -1,17 +1,20 @@
 import React from "react";
 import Profile from "../../assets/images/profile.jpg";
-import './home.css';
+import ProfilePic from "../../assets/images/pr.jpeg";
+import "./home.css";
 import Data from "./Data";
+import Skill from "./Skill";
 
 function Home() {
   return (
     <div className="h-screen w-full bg-[#f9f9f9]">
-      <div className="max-w-[1000px] grid gap-6 mx-auto items-center  px-8 h-full justify-center">
-        <div className="gap-x-8 grid md:grid-cols-2 items-center sm:grid-row" >        
-          <div className="grid  place-items-center sm:pt-32 md:pt-0 sm:order-first md:order-1">
-            <img className="profile_img" src={Profile} alt="profile" />
+      <div className="max-w-[1050px] grid gap-6 mx-auto items-center  px-8 h-full justify-center">
+        <div className="gap-x-8 grid md:grid-cols-2 items-center sm:grid-row">
+          <div className="grid  place-items-center pt-32 md:pt-0 sm:order-first md:order-1">
+            <img className="profile_img " src={ProfilePic} alt="profile" />
           </div>
-          <Data/>
+          <Data />
+          <Skill />
         </div>
       </div>
     </div>
